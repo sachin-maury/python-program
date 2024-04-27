@@ -10,7 +10,6 @@ y = iris.target
 clf = DecisionTreeClassifier(random_state=42)
 clf.fit(X, y)
 
-
 tree_rules = export_text(clf, feature_names=iris.feature_names)
 print("Decision Tree Rules:\n", tree_rules)
 
