@@ -16,20 +16,20 @@ def k_means(data, k, max_iterations=100):
     return centroids, labels
 
 if __name__ == "__main__":
-    # Generate synthetic data with three clusters
+    
     np.random.seed(42)
     data1 = np.random.normal(loc=[2, 2], scale=[0.5, 0.5], size=(100, 2))
     data2 = np.random.normal(loc=[7, 7], scale=[0.5, 0.5], size=(100, 2))
     data3 = np.random.normal(loc=[12, 2], scale=[0.5, 0.5], size=(100, 2))
     data = np.concatenate([data1, data2, data3])
 
-    # Number of clusters
+   
     k = 3
 
-    # Apply K-means clustering
+    
     centroids, labels = k_means(data, k)
 
-    # Plot the results
+    
     plt.scatter(data[:, 0], data[:, 1], c=labels, cmap='viridis', alpha=0.7)
     plt.scatter(centroids[:, 0], centroids[:, 1], c='red', marker='x', s=100, label='Centroids')
     plt.title('K-means Clustering')
