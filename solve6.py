@@ -19,6 +19,7 @@ def tic_tac_toe():
     board = [[' ' for _ in range(3)] for _ in range(3)]
     current_player = 'X'
 
+
     while True:
         print_board(board)
 
