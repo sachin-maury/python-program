@@ -1,8 +1,8 @@
 import random
 
 def objective_function(x):
-    # Example objective function, replace it with your own function
-    return -(x ** 2)  # Minimize the square of x
+    
+    return -(x ** 2)  
 
 def hill_climbing(initial_solution, step_size, max_iterations):
     current_solution = initial_solution
@@ -18,7 +18,7 @@ def hill_climbing(initial_solution, step_size, max_iterations):
 
     return current_solution, current_value
 
-# Example usage:
+
 initial_solution = random.uniform(-10, 10)
 step_size = 0.1
 max_iterations = 100
