@@ -12,7 +12,7 @@ def simulated_annealing_tsp(distance_matrix, temperature=1000, cooling_rate=0.95
 
     best_order = current_order.copy()
     best_distance = current_distance
-
+    
     for iteration in range(iterations):
         new_order = current_order.copy()
         i, j = sorted(random.sample(range(num_cities), 2))
