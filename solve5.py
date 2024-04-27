@@ -39,7 +39,6 @@ def astar(start, goal, graph, heuristic):
 
     return None  
 
-
 graph = {
     'A': {'B': 1, 'C': 4},
     'B': {'A': 1, 'C': 2, 'D': 5},
