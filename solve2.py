@@ -4,7 +4,7 @@ def print_board(board):
     print()
 
 def is_safe(board, row, col):
-    # Check if there is a queen in the same row, column, or diagonals
+    
     for i in range(row):
         if board[i] == col or \
            board[i] - i == col - row or \
@@ -13,7 +13,7 @@ def is_safe(board, row, col):
     return True
 
 def hill_climbing(n):
-    board = [-1] * n  # Each element represents the column of the queen in that row
+    board = [-1] * n  
 
     for row in range(n):
         min_attacks = float('inf')
@@ -33,12 +33,12 @@ def hill_climbing(n):
     return [[('Q' if j == board[i] else '.') for j in range(n)] for i in range(n)]
 
 if __name__ == "__main__":
-    # Set the board size
+    
     board_size = 8
 
-    # Solve the 8-Queens problem using hill climbing
+    
     solution = hill_climbing(board_size)
 
-    # Print the final solution
+   
     print("Final Solution:")
     print_board(solution)
