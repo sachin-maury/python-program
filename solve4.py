@@ -15,7 +15,7 @@ def hill_climbing(initial_solution, step_size, max_iterations):
         if new_value > current_value:
             current_solution = new_solution
             current_value = new_value
-
+            
     return current_solution, current_value
 
 
