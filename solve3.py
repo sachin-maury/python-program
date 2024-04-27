@@ -10,7 +10,7 @@ def tsp_bfs(graph, start):
         current, path, cost = queue.get()
 
         if len(path) == n:
-            # If all cities are visited, go back to the starting city
+           
             path.append(start)
             return path, cost + graph[current][start]
 
@@ -23,7 +23,7 @@ def tsp_bfs(graph, start):
 
     return None, float('inf')
 
-# Example usage:
+
 graph = [
     [0, 10, 15, 20],
     [10, 0, 35, 25],
