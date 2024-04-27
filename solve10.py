@@ -39,7 +39,6 @@ class WeatherAdviceSystem:
 if __name__ == "__main__":
     weather_system = WeatherAdviceSystem()
 
-   
     weather_system.set_preference('temperature', 25)
     weather_system.set_preference('precipitation', 'rain')
 
