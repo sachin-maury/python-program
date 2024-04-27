@@ -16,6 +16,7 @@ def find_blank(state):
             if value == 0:
                 return i, j
 
+
 def is_valid_move(i, j):
     return 0 <= i < 3 and 0 <= j < 3
 
