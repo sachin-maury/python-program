@@ -19,6 +19,7 @@ def hill_climbing(n):
         min_attacks = float('inf')
         best_col = -1
 
+
         for col in range(n):
             board[row] = col
             attacks = sum(1 for i in range(row) if not is_safe(board, i, board[i]))
