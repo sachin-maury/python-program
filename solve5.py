@@ -37,9 +37,9 @@ def astar(start, goal, graph, heuristic):
                 if new_node not in open_set:
                     heapq.heappush(open_set, new_node)
 
-    return None  # No path found
+    return None  
 
-# Example usage:
+
 graph = {
     'A': {'B': 1, 'C': 4},
     'B': {'A': 1, 'C': 2, 'D': 5},
@@ -51,7 +51,7 @@ start_node = 'A'
 goal_node = 'D'
 
 def heuristic(node, goal):
-    return 0  # No heuristic (Dijkstra's algorithm)
+    return 0  
 
 result = astar(start_node, goal_node, graph, heuristic)
 
